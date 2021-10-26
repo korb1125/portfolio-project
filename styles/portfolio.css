@@ -80,6 +80,10 @@ p {
     border: 1px solid var(--branding-color);
 }
 
+.open-weather {
+    color: var(--branding-color);
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 60px;
