@@ -125,6 +125,36 @@ p {
     color: var(--branding-color);
 }
 
+.logo {
+    max-height: 40px;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    line-height: 42px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--branding-color);
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 60px;
@@ -153,5 +183,8 @@ p {
         margin: 0 auto;
         color: white;
         background: var(--branding-color);
+    }
+    nav a {
+        font-size: 12px;
     }
 }
