@@ -29,7 +29,7 @@ h2 {
     font-size: 64px;
 }
 
-h4 {
+h3 {
     font-size: 48px;
 }
 
@@ -42,7 +42,7 @@ p {
 .hero {
     background: var(--secondary-color);
     text-align: center;
-    padding: 160px 20px;
+    padding: 80px 20px;
 }
 
 .hero p {
@@ -60,7 +60,7 @@ p {
 }
 
 .content-container {
-    padding: 160px 20px;
+    padding: 60px 20px;
 }
 
 .content h1 {
@@ -94,6 +94,13 @@ p {
     font-size: 18px;
     line-height: 27px;
     padding: 18px 30px;
+    transition: all 150ms ease-in-out;
+}
+
+.btn-branding:hover {
+    color: var(--branding-color);
+    background: white;
+    border-color: var(--branding-color);
 }
 
 .feature {
@@ -110,15 +117,24 @@ p {
     border-radius: 4px;
     color: var(--branding-color);
     border: 1px solid var(--branding-color);
+    transition: all 150ms ease-in-out;
+}
+
+.btn-branding-page:hover {
+    color: white;
+    background: var(--branding-color);
 }
 
 .open-weather {
     color: var(--branding-color);
 }
 
+.open-weather:hover {
+    color: #6c757d;
+}
+
 .headshot {
     border-radius: 5px;
-    max-width: 560px;
 }
 
 .contact {
@@ -127,6 +143,10 @@ p {
 
 .contact-link {
     color: var(--branding-color);
+}
+
+.contact-link:hover {
+    color: #272142;
 }
 
 .logo {
@@ -199,6 +219,15 @@ footer .social-links a:hover {
     background: var(--branding-color);
 }
 
+footer .source-link {
+    color: var(--branding-color);
+    text-decoration: none;
+}
+
+footer .source-link:hover {
+    color: #272142;
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 60px;
@@ -207,9 +236,6 @@ footer .social-links a:hover {
     h2 {
         font-size: 44px;
         text-align: center;
-    }
-    .hero {
-        padding: 80px 20px;
     }
     .feature {
         margin: 0 60px;
